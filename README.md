@@ -274,32 +274,22 @@ css outputs
 
 ### $family
 
-default font family.
+Default font family.
 
-**default**
-
-- `-apple-system` ... use "San Francisco" as primary font in mac
-
-- `BlinkMacSystemFont` ... use "San Francisco" as primary in chrome on mac
-
-- `Helvetica` ... secondary font in mac
-
-- `Arial` ... secondary font in windows
-
-- `Hiragino Kaku Gothic ProN` ... primary japanese font in mac
-
-- `Yu Gothic Medium` ... primary japanese font in windows
-
-- `游ゴシック Medium` ... primary japanese font in ie on windows
-
-- `YuGothic` ... secondary japanese font in mac
-
-- `Meiryo` ... secondary japanese font in windows
-
-- `メイリオ` ... secondary japanese font in ie on windows
+| Name                        | Description                                        |
+| :-------------------------- | :------------------------------------------------- |
+| `system-ui`                 | Use system ui font as primary font in macOS.       |
+| `-apple-system`             | Use "San Francisco" as primary font in macOS.      |
+| `BlinkMacSystemFont`        | Use "San Francisco" as primary in chrome on macOS. |
+| `Helvetica`                 | Secondary font in macOS.                           |
+| `Arial`                     | Secondary font in Windows.                         |
+| `Hiragino Sans`             | Primary japanese font in macOS.                    |
+| `Hiragino Kaku Gothic ProN` | Primary japanese font in macOS. (fallback)         |
+| `Yu Gothic Medium`          | Primary japanese font in Windows.                  |
+| `YuGothic`                  | Secondary japanese font in macOS.                  |
+| `Meiryo`                    | Secondary japanese font in Windows.                |
 
 - **Group:** Default settings
-
 - **Access:** public
 
 #### Type
@@ -310,20 +300,16 @@ default font family.
 
 ### $family-monospace
 
-default monospace font family.
+Default monospace font family.
 
-**default**
-
-- `Consolas` ... primary font in windows (use it as primary if installed in mac)
-
-- `Monaco` ... primary font in mac
-
-- `Menlo` ... secondary font in mac
-
-- `Courier` ... secondary font in windows
+| Name       | Description                                             |
+| :--------- | :------------------------------------------------------ |
+| `Consolas` | Primary font in Windows. (Use it if installed in macOS) |
+| `Monaco`   | Primary font in macOS.                                  |
+| `Menlo`    | Secondary font in macOS.                                |
+| `Courier`  | Secondary font in Windows.                              |
 
 - **Group:** Default settings
-
 - **Access:** public
 
 #### Type
@@ -1723,7 +1709,8 @@ css outputs
 
 ```css
 .selector {
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial,
+  font-family:
+    -apple-system, BlinkMacSystemFont, Helvetica, Arial,
     'Hiragino Kaku Gothic ProN', 'Yu Gothic Medium', '游ゴシック Medium',
     YuGothic, Meiryo, 'メイリオ', sans-serif !important;
 }
@@ -2028,7 +2015,8 @@ css outputs
 
 ```css
 .selector {
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial,
+  font-family:
+    -apple-system, BlinkMacSystemFont, Helvetica, Arial,
     'Hiragino Kaku Gothic ProN', 'Yu Gothic Medium', '游ゴシック Medium',
     YuGothic, Meiryo, 'メイリオ', sans-serif !important;
 }
@@ -3504,6 +3492,32 @@ css outputs
   word-wrap: break-word;
 }
 ```
+
+<a id="general-variable-_name"></a>
+
+### $\_name
+
+Unit name
+
+- **Group:** General
+- **Access:** private
+
+#### Type
+
+**[String](https://sass-lang.com/documentation/values/strings)**
+
+<a id="general-variable-_name"></a>
+
+### $\_name
+
+Unit name
+
+- **Group:** General
+- **Access:** private
+
+#### Type
+
+**[String](https://sass-lang.com/documentation/values/strings)**
 
 <a id="z-index-feature-variable-_default-range"></a>
 
